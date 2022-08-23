@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Drag and Drop</title>
+        <link rel="stylesheet" href="./index.css"/>
+        <script src="./index.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header class="flex-container">
+            <h1>File Drag and Drop Uploader</h1>
+        </header>
+        <div class="flex-container root-container">
+            <div class="flex-container upload-area">
+                <span></span>
+                <div class="flex-container file-container empty">
+                </div>
+                <div class="flex-container uploadInfo">
+                    <h4 style="text-align: center;">Drop File(s) here to Upload<br><br>OR</h4>
+                    <button id="fileUploadBtn">BROWSE FILES</button>
+                    <input type="file" id="fileUploader" name="fileInput" multiple/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

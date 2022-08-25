@@ -55,7 +55,7 @@ function totFileStateChange() {
         fileContainer.classList.remove('empty');
         for (let i = filesPrevLength; i < files.length; i++) {
             let node = document.createElement("div");
-            node.filesIndex = `${i}`;
+            node.setAttribute("filesIndex", `${i}`);
             let deleteBtn = document.createElement("button");
             deleteBtn.classList.add("fileDeleteBtn");
             deleteBtn.style = "position: absolute; right: 5px; top: 5px; width: 15px; height: 15px";

@@ -66,7 +66,7 @@ function totFileStateChange() {
                 filesPrevLength = files.length;
                 totFileStateChange();
             };
-            node.append(deleteBtn);
+            
             //node.innerHTML = files[i].name;
             if (files[i].type.slice(0,5) == "image") {
                 node.style.background = `url(${URL.createObjectURL(files[i])}) center no-repeat`;
@@ -77,6 +77,7 @@ function totFileStateChange() {
             } else {
                 node.innerHTML = `${files[i].name}`;
             }
+            node.append(deleteBtn);
             fileContainer.append(node);
         }
     }
